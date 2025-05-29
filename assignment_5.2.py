@@ -12,18 +12,18 @@ while True:
     if num == "done":
         break
     try:
-        fnum = int(num)
+        inum = int(num)
     except:
         print("Invalid input")
         continue
     if largest == None:
-        largest = fnum
-    elif fnum > largest :
-        largest = fnum
+        largest = inum
+    elif inum > largest :
+        largest = inum
     if smallest == None:
-        smallest = fnum
-    elif fnum < smallest:
-        smallest = fnum
+        smallest = inum
+    elif inum < smallest:
+        smallest = inum
 
 print("Maximum is", largest)
 print("Minimum is", smallest)
