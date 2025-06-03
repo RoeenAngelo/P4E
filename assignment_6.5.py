@@ -2,6 +2,6 @@
 
 text = "X-DSPAM-Confidence:    0.8475"
 
-pos = text.find('0')
-ftext = float(text[pos:])
+pos = text.find(':')
+ftext = float(text[pos+2:])
 print(ftext)
